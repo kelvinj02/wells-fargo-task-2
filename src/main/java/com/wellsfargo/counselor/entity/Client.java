@@ -21,7 +21,7 @@ public class Client {
     private String address;
 
     @Column(nullable = false)
-    private String phone;
+    private int phone;
 
     @Column(nullable = false)
     private  String email;
@@ -30,7 +30,7 @@ public class Client {
 
     }
 
-    public Client(String firstname, String lastname, String address, String phone, String email)
+    public Client(String firstname, String lastname, String address, int phone, String email)
     {
         this.firstname=firstname;
         this.lastname=lastname;
@@ -67,11 +67,11 @@ public class Client {
         this.address = address;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 

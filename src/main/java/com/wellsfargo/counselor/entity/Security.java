@@ -18,7 +18,7 @@ public class Security {
     public String category;
 
     @Column
-    public double purchasePrice;
+    public float purchasePrice;
 
     @Column
     public String purchaseDate;
@@ -31,7 +31,7 @@ public class Security {
 
     }
 
-    public Security(String name, String category, double purchasePrice, String purchaseDate, int quantity)
+    public Security(String name, String category, float purchasePrice, String purchaseDate, int quantity)
     {
         this.name=name;
         this.category=category;
@@ -43,7 +43,7 @@ public class Security {
     public long getSecurityId() {
         return securityId;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -60,11 +60,11 @@ public class Security {
         this.category = category;
     }
 
-    public double getPurchasePrice() {
+    public float getPurchasePrice() {
         return purchasePrice;
     }
 
-    public void setPurchasePrice(double purchasePrice) {
+    public void setPurchasePrice(float purchasePrice) {
         this.purchasePrice = purchasePrice;
     }
 
